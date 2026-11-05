@@ -173,7 +173,9 @@
     slides.forEach((s, k) => s.classList.toggle("on", k === cur));
     dots.forEach((d, k) => d.classList.toggle("on", k === cur));
     thumbs.forEach((t, k) => t.classList.toggle("on", k === cur));
-    thumbs[cur] && thumbs[cur].scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+    // Scroll only the thumbnail strip sideways (never the page)
+    const strip = $(".thumbs"), t = thumbs[cur];
+    if (strip && t) strip.scrollTo({ left: t.offsetLeft - (strip.clientWidth - t.offsetWidth) / 2, behavior: "smooth" });
   }
   const play = () => { clearInterval(timer); timer = setInterval(() => show(cur + 1), 4500); };
   const stop = () => clearInterval(timer);
