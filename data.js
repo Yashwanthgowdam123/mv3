@@ -68,15 +68,15 @@ const PROFILE = {
     score: "7.98 CGPA"
   },
 
-  /* Fill these in: leave "" to hide an item */
+  /* ==== REPLACE EVERY VALUE BELOW WITH YOUR REAL DETAILS ====
+     (these are placeholders; leave a field as "" to hide that button) */
   contact: {
-    phone: "",                    // e.g. "+91 98765 43210"
-    whatsapp: "",                 // digits only with country code, e.g. "919876543210"
-    email: "",
-    linkedin: "",                 // full URL
-    instagram: "",                // full URL
-    github: "",                   // full URL
-    facebook: ""                  // full URL
+    phone: "9741924068 / 8296740180",                                   // your mobile number
+    whatsapp: "918296740180",                                   // digits only, country code first (91...)
+    email: "yashwanthgowdam0@gmail.com",                              // your email address
+    linkedin: "https://www.linkedin.com/in/yashwanthgowdam",      // LinkedIn profile URL
+    instagram: "https://www.instagram.com/yashwanth_gowda.m",       // Instagram profile URL
+    github: "https://github.com/YashwanthGowdaM"                 // GitHub profile URL
   },
 
   /* Files inside /media (GitHub). Add or remove names freely. */
